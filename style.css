@@ -1,0 +1,231 @@
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #111;
+    padding: 1rem 0;
+    border-bottom: 1px solid #444;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ccc;
+}
+
+main.conteudo {
+    flex: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+p,
+ul,
+label {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+footer {
+    background: #111;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 1px solid #444;
+}
+
+
+/* Formulário */
+
+form.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.75rem;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+
+/* Galeria */
+
+section.galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+section.galeria img {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+.galeria-inicial {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 2rem;
+}
+
+.galeria-inicial img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeria-inicial img:hover {
+    transform: scale(1.05);
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 3px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px black;
+    transition: 0.3s ease;
+}
+
+#lightbox:hover {
+    cursor: zoom-out;
+}
+
+
+/* Galeria inicial */
+
+.galeria-inicial {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px;
+    padding: 2rem;
+}
+
+.galeria-inicial img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.galeria-inicial img:nth-child(odd) {
+    grid-row: span 2;
+}
+
+.galeria-inicial img:nth-child(even) {
+    grid-row: span 1;
+}
+
+
+/* Header com logo e menu */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #444;
+}
+
+
+/* Logo */
+
+header .logo img {
+    height: 40px;
+    width: auto;
+}
+
+
+/* Menu */
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ccc;
+}

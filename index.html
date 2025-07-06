@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Fernandes | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo de Pedro Fernandes">
+            </div>
+        </a>
+        <nav>
+
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+
+        <main class="galeria-inicial">
+            <img src="images/Ciena.jpg" alt="Ciena" onclick="expandir(this)">
+            <img src="images/ITMOL.jpg" alt="In the Mood of Love (Wong Kar Wai)" onclick="expandir(this)">
+            <img src="images/Ningning.png" alt="NingNing" onclick="expandir(this)">
+            <img src="images/Winter.jpg" alt="Winter" onclick="expandir(this)">
+            <img src="images/Yves.jpg" alt="Yves" onclick="expandir(this)">
+            <img src="images/Arquivo Publico.png" alt="Arquivo Publico" onclick="expandir(this)">
+            <img src="images/1.png" alt="Poster1" onclick="expandir(this)">
+            <img src="images/2.png" alt="Poster2" onclick="expandir(this)">
+            <img src="images/3.png" alt="Poster3" onclick="expandir(this)">
+            <img src="images/Bandeira 1.png" alt="bandeira1" onclick="expandir(this)">
+            <img src="images/Bandeira 3.png" alt="bandeira2" onclick="expandir(this)">
+            <img src="images/Arquivo publico 1.png" alt="arq1" onclick="expandir(this)">
+            <img src="images/Arquivo Publico 2.png" alt="arq2" onclick="expandir(this)">
+            <img src="images/Arquivo publico 3.png" alt="arq3" onclick="expandir(this)">
+            <img src="images/arquivo publico 4.png" alt="arq4" onclick="expandir(this)">
+            <img src="images/Arquivo Publico 5.png" alt="arq5" onclick="expandir(this)">
+            <img src="images/arquivo publico 6.png" alt="arq6" onclick="expandir(this)">
+        </main>
+        <div id="lightbox" class="lightbox" onclick="fecharLightbox()">
+            <img id="lightbox-img" src="" alt="Imagem ampliada">
+        </div>
+    </main>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pedro Fernandes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function expandir(img) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = img.src;
+            lightbox.style.display = 'flex';
+        }
+
+        function fecharLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
