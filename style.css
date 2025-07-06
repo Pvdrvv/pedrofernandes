@@ -1,7 +1,7 @@
 /* Reset básico */
 
 * {
-    margin: 0;
+    margin: 0; /* Remove a margem padrão */
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -74,7 +74,7 @@ footer {
 /* Formulário */
 
 form.formulario {
-    display: flex;
+    display: flex; /* Para organizar os campos do formulário */
     flex-direction: column;
 }
 
@@ -114,8 +114,8 @@ section.galeria {
 }
 
 section.galeria img {
-    width: 100%;
-    border: 2px solid #fff;
+    width: 100%; /* Para ocupar toda a largura disponível */
+    border: 1px solid #ff0000;
     border-radius: 6px;
 }
 
@@ -130,15 +130,15 @@ section.galeria img {
     width: 100%;
     height: auto;
     border-radius: 6px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    object-fit: cover; /* Faz com que a imagem preencha a area sem distorcer */
+    transition: transform 0.3s ease; /* Efeito de zoom */
 }
 
 .galeria-inicial img:hover {
     transform: scale(1.05);
 }
 
-#lightbox {
+#lightbox { /* Ampliar as imagens ao clicar */
     display: none;
     position: fixed;
     top: 0;
@@ -160,7 +160,7 @@ section.galeria img {
     transition: 0.3s ease;
 }
 
-#lightbox:hover {
+#lightbox:hover { /* Muda o cursor quando o usuário passar em cima do lightbox */
     cursor: zoom-out;
 }
 
