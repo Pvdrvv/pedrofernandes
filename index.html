@@ -10,6 +10,7 @@
 
 <body>
     <header>
+         <!-- Logo com link para a pagina inicial, o index -->
         <a href="index.html" class="logo">
             <div class="logo">
                 <img src="images/logo.png" alt="Logo de Pedro Fernandes">
@@ -28,7 +29,7 @@
     </header>
 
     <main class="home">
-
+<!-- Imagens dos trabalhos -->
         <main class="galeria-inicial">
             <img src="images/Ciena.jpg" alt="Ciena" onclick="expandir(this)">
             <img src="images/ITMOL.jpg" alt="In the Mood of Love (Wong Kar Wai)" onclick="expandir(this)">
@@ -57,7 +58,7 @@
     <footer>
         <p>&copy; 2025 Pedro Fernandes. Todos os direitos reservados.</p>
     </footer>
-
+<!-- Script para expandir as imagens da tela inicial -->
     <script>
         function expandir(img) {
             const lightbox = document.getElementById('lightbox');
